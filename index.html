@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07040d">
+<meta name="description" content="ZonaGTA6TV — una experiencia inmersiva en español para vivir GTA VI, descubrir novedades y conectar con la comunidad.">
+<meta property="og:title" content="ZonaGTA6TV — Entra a la Zona">
+<meta property="og:description" content="Noticias, vídeos, comunidad y una experiencia neon inspirada en Vice City.">
+<meta property="og:image" content="assets/hero-neon.webp">
+<title>ZonaGTA6TV — Entra a la Zona</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23ff19ad'/%3E%3Ctext x='50' y='65' font-size='43' text-anchor='middle' font-family='Arial' font-weight='900' fill='white'%3EZ6%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/hero-neon.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+<div class="grid-bg"></div>
+<div class="aurora a1"></div><div class="aurora a2"></div>
+<div class="progress" id="progress"></div>
+
+<div class="welcome" id="welcome" aria-hidden="true">
+  <div class="welcome-backdrop"></div>
+  <div class="welcome-card glass" data-tilt>
+    <button class="close-welcome" id="closeWelcome" aria-label="Cerrar">×</button>
+    <span class="mini-label">TRANSMISIÓN ENTRANTE · ZONA GTA6TV</span>
+    <div class="welcome-logo"><span>ZONA</span><b>GTA6</b><i>TV</i></div>
+    <div class="welcome-orb"></div>
+    <h1>Bienvenido<br><em>a la Zona.</em></h1>
+    <p>Una experiencia visual creada para que no solo leas sobre GTA VI: <strong>lo vivas.</strong></p>
+    <div class="welcome-actions">
+      <button class="primary" id="enterBtn">ENTRAR A LA EXPERIENCIA <span>↗</span></button>
+      <a class="social youtube" data-social="youtube" target="_blank" rel="noopener">▶ YouTube</a>
+      <a class="social tiktok" data-social="tiktok" target="_blank" rel="noopener">♪ TikTok</a>
+    </div>
+    <small>Usa auriculares y explora con el cursor para ver los efectos 3D.</small>
+  </div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="#home" aria-label="ZonaGTA6TV"><span>ZONA</span><b>GTA6</b><i>TV</i></a>
+    <nav>
+      <a href="#home">Inicio</a><a href="#universo">Universo</a><a href="#destacados">Destacados</a><a href="#galeria">Galería</a><a href="#comunidad">Comunidad</a>
+    </nav>
+    <div class="top-actions">
+      <a class="social-mini" data-social="youtube" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
+      <a class="social-mini" data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok">♪</a>
+      <button id="themeBtn" aria-label="Cambiar iluminación">◐</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero wrap">
+  <div class="hero-copy">
+    <div class="status"><span></span> SEÑAL ACTIVA · VICE CITY</div>
+    <div class="hero-title"><span>ZONA</span><strong>GTA6</strong><i>TV</i></div>
+    <h1>NO MIRES<br><em>DESDE AFUERA.</em></h1>
+    <p class="lead">Noticias, vídeos, teorías, imágenes y comunidad en una interfaz diseñada para sentirse como entrar a una ciudad que nunca duerme.</p>
+    <div class="hero-actions">
+      <a class="primary" href="#destacados">EXPLORAR LA ZONA <span>↓</span></a>
+      <a class="secondary" data-social="youtube" target="_blank" rel="noopener">VER CANAL EN YOUTUBE ↗</a>
+    </div>
+    <div class="hero-meta"><span>◉ EXPERIENCIA 3D</span><span>◈ DISEÑO RESPONSIVE</span><span>✦ OPTIMIZADO</span></div>
+  </div>
+  <div class="hero-visual">
+    <div class="scene" data-tilt>
+      <div class="scene-ring ring1"></div><div class="scene-ring ring2"></div>
+      <div class="scene-image"><img src="assets/hero-neon.webp" alt="Concepto visual neon de ZonaGTA6TV" width="1536" height="1024"></div>
+      <div class="hud hud-top"><span>LIVE FEED</span><b>06:VI</b></div>
+      <div class="hud hud-bottom"><span>VICE CITY / 25.77° N</span><b>ONLINE</b></div>
+      <div class="floating-chip chip1">◉ 24/7<br><small>COBERTURA</small></div>
+      <div class="floating-chip chip2">01<br><small>ENTRAR</small></div>
+      <div class="depth-card">
+        <span>WELCOME TO</span><b>THE ZONE</b><i>scroll to explore</i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="marquee"><div>GTA VI · VICE CITY · LEONIDA · ZONAGTA6TV · GTA VI · VICE CITY · LEONIDA · ZONAGTA6TV · </div></section>
+
+<section id="universo" class="wrap section universe">
+  <div class="section-intro"><span class="eyebrow">01 / EL UNIVERSO</span><h2>Una página.<br><em>Una atmósfera.</em></h2><p>Todo el portal fue replanteado para que cada interacción tenga profundidad, movimiento y personalidad.</p></div>
+  <div class="feature-grid">
+    <article class="feature big" data-tilt><div class="feature-bg" style="background-image:url('assets/portal-preview.webp')"></div><div class="feature-content"><span class="tag">IMMERSIVE UI</span><h3>Vice City<br>en tus manos.</h3><p>Capas, reflejos, vidrio, profundidad y microanimaciones que reaccionan a ti.</p><a href="#destacados">Descubrir →</a></div></article>
+    <article class="feature neon" data-tilt><div class="scan"></div><span class="feature-icon">✦</span><b>3D INTERACTIVO</b><strong>Inclina<br>la interfaz.</strong><small>Mueve el cursor sobre los paneles.</small></article>
+    <article class="feature countdown-card" data-tilt><span class="tag">CUENTA REGRESIVA</span><div id="countdown">000 <small>DÍAS</small><br>00:00:00</div><small>19 NOVIEMBRE 2026</small></article>
+  </div>
+</section>
+
+<section id="destacados" class="wrap section highlights">
+  <div class="section-head"><div><span class="eyebrow">02 / DESTACADOS</span><h2>Tu próxima obsesión<br><em>empieza aquí.</em></h2></div><span class="live-pill"><i></i> FEED ACTIVO</span></div>
+  <div class="story-grid">
+    <article class="story story-main" data-tilt><div class="story-img"><img src="assets/hero-neon.webp" alt="Vista neon conceptual de ZonaGTA6TV" loading="lazy"><span class="tag">EXPERIENCIA</span></div><div class="story-body"><small>HOY · 8 MIN</small><h3>Así se siente la nueva ZonaGTA6TV.</h3><p>Una portada cinematográfica, accesos rápidos y una navegación pensada para quedarse.</p><button data-modal="experiencia">ABRIR HISTORIA →</button></div></article>
+    <article class="story" data-tilt><div class="story-img"><img src="assets/portal-preview.webp" alt="Previsualización visual del portal" loading="lazy"><span class="tag purple">DISEÑO</span></div><div class="story-body"><small>DISEÑO · 3D</small><h3>Paneles que salen de la pantalla.</h3><p>La interfaz responde al movimiento para crear una sensación de profundidad.</p><button data-modal="3d">VER DETALLES →</button></div></article>
+    <article class="story social-story" data-tilt><div class="social-art"><div class="social-glow"></div><b>YOUTUBE</b><strong>LA ZONA<br>EN VIDEO.</strong><span>Directos · Shorts · Noticias</span></div><div class="story-body"><small>CANAL OFICIAL</small><h3>Del feed a tu pantalla.</h3><p>Salta directamente al canal y descubre el contenido audiovisual de ZonaGTA6TV.</p><a class="primary small" data-social="youtube" target="_blank" rel="noopener">IR A YOUTUBE ↗</a></div></article>
+  </div>
+</section>
+
+<section id="galeria" class="wrap section gallery-section">
+  <div class="section-head"><div><span class="eyebrow">03 / GALERÍA</span><h2>Postales de <em>la Zona.</em></h2><p>Una selección visual para vestir la experiencia.</p></div><a class="secondary" href="https://www.rockstargames.com/VI/media/screenshots" target="_blank" rel="noopener">VER GALERÍA OFICIAL ↗</a></div>
+  <div class="gallery">
+    <figure class="gallery-item tall" data-tilt><img src="assets/hero-neon.webp" alt="Arte visual neon de ZonaGTA6TV" loading="lazy"><figcaption><b>01</b><span>NEON NIGHTS</span></figcaption></figure>
+    <figure class="gallery-item" data-tilt><img src="assets/portal-preview.webp" alt="Portal ZonaGTA6TV en estilo neon" loading="lazy"><figcaption><b>02</b><span>THE PORTAL</span></figcaption></figure>
+    <div class="gallery-copy"><span class="eyebrow">MATERIAL OFICIAL</span><h3>Explora también la fuente.</h3><p>Para noticias e imágenes de GTA VI, consulta siempre los canales oficiales de Rockstar Games.</p><a class="secondary" href="https://www.rockstargames.com/VI" target="_blank" rel="noopener">ROCKSTAR GAMES ↗</a></div>
+  </div>
+</section>
+
+<section id="comunidad" class="community">
+  <div class="wrap community-inner">
+    <div><span class="eyebrow">04 / COMUNIDAD</span><h2>Tu señal.<br><em>Nuestra Zona.</em></h2><p>Conecta con el contenido que ya estás buscando. Sigue el canal, comparte la web y haz que la señal crezca.</p></div>
+    <div class="social-console glass" data-tilt>
+      <div class="console-top"><span>NETWORK STATUS</span><b><i></i> CONNECTED</b></div>
+      <div class="console-main"><span>CHOOSE YOUR<br>CHANNEL</span><strong>GTA6TV</strong></div>
+      <a class="channel youtube-channel" data-social="youtube" target="_blank" rel="noopener"><b>▶</b><span>YouTube<small>VIDEOS · SHORTS · DIRECTOS</small></span><i>↗</i></a>
+      <a class="channel tiktok-channel" data-social="tiktok" target="_blank" rel="noopener"><b>♪</b><span>TikTok<small>CLIPS · TENDENCIAS · MOMENTOS</small></span><i>↗</i></a>
+      <div class="console-footer">ZONAGTA6TV // FOLLOW THE SIGNAL</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap footer-inner"><div class="logo"><span>ZONA</span><b>GTA6</b><i>TV</i></div><p>Experiencia independiente para la comunidad de GTA VI. No afiliada con Rockstar Games.</p><div class="footer-links"><a href="#home">Inicio</a><a href="#galeria">Galería</a><a href="#comunidad">Comunidad</a><a data-social="youtube" target="_blank" rel="noopener">YouTube</a><a data-social="tiktok" target="_blank" rel="noopener">TikTok</a></div><small>© <span id="year"></span> ZonaGTA6TV</small></div></footer>
+
+<div class="toast" id="toast"></div>
+<script src="app.js" defer></script>
+</body>
+</html>
