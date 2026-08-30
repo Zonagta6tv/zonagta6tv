@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08080d">
+  <meta name="description" content="ZonaGTA6TV — noticias, blog, guías, trucos, filtraciones y comunidad sobre Grand Theft Auto VI.">
+  <title>ZonaGTA6TV // GTA VI Future Hub</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scanlines"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="ZonaGTA6TV inicio">
+      <span class="brand-mark">ZG</span><span>Zona<span class="pink">GTA6</span>TV</span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#news">Noticias</a><a href="#blog">Blog</a><a href="#guides">Guías</a><a href="#leaks">Leaks</a><a href="#community">Comunidad</a>
+    </nav>
+    <div class="social-mini"><a data-social="youtube" class="yt" target="_blank" rel="noopener">YouTube</a><a data-social="tiktok" class="tt" target="_blank" rel="noopener">TikTok</a></div>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> LIVE // INTELIGENCIA GTA VI</div>
+        <h1>EL FUTURO DE<br><em>LEONIDA</em> EMPIEZA AQUÍ.</h1>
+        <p class="hero-lead">Noticias, análisis, guías, trucos y filtraciones de GTA VI en una experiencia digital con estética de videojuego.</p>
+        <div class="hero-actions"><a href="#news" class="btn btn-primary">ENTRAR AL HUB</a><a data-social="youtube" target="_blank" rel="noopener" class="btn btn-ghost">VER CANAL ▶</a></div>
+        <div class="hero-stats"><div><b id="daysLeft">—</b><span>DÍAS PARA GTA VI</span></div><div><b>19.11.26</b><span>LANZAMIENTO</span></div><div><b>PS5</b><span>Y XBOX SERIES X|S</span></div></div>
+      </div>
+      <div class="hero-art tilt" data-tilt>
+        <div class="hero-glow"></div><img src="assets/hero-neon.webp" alt="Arte neon de ZonaGTA6TV" loading="eager">
+        <div class="hud-card"><span>MISSION FEED</span><strong>VICE CITY // 06:27 PM</strong><small>SEÑAL ESTABLE · 98%</small></div>
+        <div class="target">+</div>
+      </div>
+    </section>
+
+    <section class="ticker"><div class="ticker-track"><span>⚡ GTA VI // EXTENDED LOOK YA DISPONIBLE</span><span>•</span><span>ROCKSTAR CONFIRMA 19 NOVIEMBRE 2026</span><span>•</span><span>JASON + LUCIA // LEONIDA</span><span>•</span><span>NO CONFUNDAS RUMORES CON INFORMACIÓN OFICIAL</span><span>•</span></div></section>
+
+    <section class="dashboard section-pad" id="news">
+      <div class="section-head"><div><span class="kicker">01 // INTEL FEED</span><h2>Centro de <em>Noticias</em></h2></div><button class="filter-btn" data-filter="all">ACTUALIZADO · 30 AGO 2026</button></div>
+      <div class="news-grid" id="newsGrid"></div>
+    </section>
+
+    <section class="portal section-pad" id="blog">
+      <div class="portal-image tilt" data-tilt><img src="assets/portal-preview.webp" alt="Portal visual neon" loading="lazy"><div class="portal-overlay"><span>ARCHIVO DIGITAL</span><b>LEONIDA<br>DATABASE</b></div></div>
+      <div class="portal-copy"><span class="kicker">02 // BLOG</span><h2>Entra al <em>archivo</em>.</h2><p>Un blog pensado como una central de inteligencia: desglosamos trailers, personajes, mundo abierto, mecánicas y todo lo que Rockstar ha enseñado.</p><div class="article-list" id="blogList"></div></div>
+    </section>
+
+    <section class="guides section-pad" id="guides">
+      <div class="section-head"><div><span class="kicker">03 // PLAYER LAB</span><h2>Guías & <em>Trucos</em></h2></div><span class="live-badge">INTERACTIVO</span></div>
+      <div class="guide-grid" id="guideGrid"></div>
+      <div class="quiz-panel"><div><span class="kicker">MINI QUIZ</span><h3>¿Qué tan preparado estás para Leonida?</h3><p id="quizQuestion">Cargando prueba...</p></div><div class="quiz-options" id="quizOptions"></div><div class="quiz-score" id="quizScore"></div></div>
+    </section>
+
+    <section class="leaks section-pad" id="leaks">
+      <div class="section-head"><div><span class="kicker">04 // SIGNAL INTERCEPT</span><h2>Filtraciones <em>y rumores</em></h2></div><span class="warning">⚠ NO OFICIAL</span></div>
+      <div class="leak-layout"><div class="leak-list" id="leakList"></div><aside class="leak-radar"><div class="radar"><i></i><i></i><i></i><b>SCANNING</b></div><h3>Radar de credibilidad</h3><p>Clasificamos cada rumor por evidencia pública, fuentes y confirmación posterior. No alojamos ni enlazamos material filtrado protegido.</p><div class="meter"><span style="width:78%"></span></div><small>78% · CONTEXTO / VERIFICACIÓN</small></aside></div>
+    </section>
+
+    <section class="community section-pad" id="community">
+      <div class="section-head"><div><span class="kicker">05 // SOCIAL HUB</span><h2>Comunidad <em>en vivo</em></h2></div><span class="online"><i></i> ONLINE</span></div>
+      <div class="community-grid"><div class="comment-panel"><div class="comment-head"><b>Comentarios de visitantes</b><span id="commentCount">0 mensajes</span></div><form id="commentForm"><input id="commentName" maxlength="30" placeholder="Tu nombre / nickname" required><textarea id="commentText" maxlength="280" placeholder="¿Qué esperas de GTA VI?" required></textarea><button class="btn btn-primary" type="submit">PUBLICAR MENSAJE</button></form><div id="comments" class="comments"></div><p class="local-note">Los comentarios de esta versión se guardan localmente en el navegador. Para comentarios compartidos entre todos los visitantes hace falta conectar un backend (Firebase, Supabase o similar).</p></div>
+      <div class="social-panel"><div class="social-card youtube"><span>YOUTUBE</span><h3>ZonaGTA6TV</h3><p>Noticias, análisis, trailers, rumores y contenido diario.</p><a data-social="youtube" target="_blank" rel="noopener" class="btn btn-ghost">IR AL CANAL ↗</a></div><div class="social-card tiktok"><span>TIKTOK</span><h3>@ZonaGTA6TV</h3><p>Clips rápidos, curiosidades y las novedades que no puedes perderte.</p><a data-social="tiktok" target="_blank" rel="noopener" class="btn btn-ghost">IR A TIKTOK ↗</a></div></div></div>
+    </section>
+
+    <section class="official section-pad"><div class="official-box"><div><span class="kicker">FUENTE PRINCIPAL</span><h2>Información oficial de Rockstar.</h2><p>La fecha de lanzamiento actual, plataformas y personajes confirmados se contrastan con Rockstar Games. Las noticias de terceros se etiquetan como tales.</p></div><a href="https://www.rockstargames.com/VI/" target="_blank" rel="noopener" class="btn btn-primary">ROCKSTAR GAMES ↗</a></div></section>
+  </main>
+
+  <footer class="footer"><div class="brand"><span class="brand-mark">ZG</span><span>Zona<span class="pink">GTA6</span>TV</span></div><p>Proyecto fan independiente. Grand Theft Auto VI es propiedad de Rockstar Games / Take-Two Interactive.</p><div><a href="privacy.html">Privacidad</a><a href="cookies.html">Cookies</a><a href="disclaimer.html">Aviso legal</a></div></footer>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
